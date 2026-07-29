@@ -1,0 +1,43 @@
+export const BASE_URL = "http://localhost:8080/api/v1.0";
+const CLOUDINARY_CLOUD_NAME = "defysf5xr";
+
+export const API_ENDPOINTS = {
+    LOGIN: "/login",
+    REGISTER: "/register",
+    GET_USER_INFO: "/profile",
+    GET_ALL_CATEGORIES: "/categories",
+    UPDATE_CATEGORY: (categoryId) => `/categories/${categoryId}`,
+    ADD_CATEGORY: "/categories",
+    GET_ALL_INCOMES:"/incomes",
+    CATEGORY_BY_TYPE:(type) => `/categories/${type}`,
+    ADD_INCOME:"/incomes",
+    DELETE_INCOME:(incomeId)=> `/incomes/${incomeId}`,
+    INCOME_EXCEL_DOWNLOAD:"excel/download/income",
+    EMAIL_INCOME:"/email/income-excel",
+    GET_ALL_EXPENSE:"/expenses",
+    ADD_EXPENSE:"/expenses",
+    DELETE_EXPENSE:(expenseId)=>`/expenses/${expenseId}`,
+    EXPENSE_EXCEL_DOWNLOAD:"excel/download/expense",
+    EMAIL_EXPENSE:"/email/expense-excel",
+    APPLY_FILTERS:"/filter",
+    DASHBOARD_DATA:"/dashboard",
+    BUDGETS:"/budgets",
+    ADD_BUDGET:"/budgets",
+    UPDATE_BUDGET:(budgetId)=>`/budgets/${budgetId}`,
+    DELETE_BUDGET:(budgetId)=>`/budgets/${budgetId}`,
+    GOALS:"/goals",
+    ADD_GOAL:"/goals",
+    UPADTE_GOAL:(goalId)=>`/goals/${goalId}`,
+    DELETE_GOAL:(goalId)=>`/goals/${goalId}`,
+    ADD_GOAL_SAVING:(goalId)=>`/goals/${goalId}/add-saving`,
+    MONTHLY_REPORT:"/reports/monthly-summary",
+    YEARLY_REPORT:"/reports/yearly-summary",
+    YEARLY_MONTHLY_REPORT:"/reports/yearly-monthly",
+    CATEGORY_WISE_REPORT:"/reports/category-wise",
+    GET_BILLS:"/bills",
+    ADD_BILL:"/bills",
+    MARK_BILL_PAID:(billId)=>`/bills/${billId}/paid`,
+    DELETE_BILL:(billId)=>`/bills/${billId}`,
+    UPLOAD_IMAGE: `https://api.cloudinary.com/v1_1/${CLOUDINARY_CLOUD_NAME}/image/upload`
+}
+
